@@ -1,25 +1,490 @@
 <!DOCTYPE html>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<!--jquery included-->
-<script src="js/jquery-3.1.1.js"></script>
-
- <head>
-<style>
-</style>
-<body>
-<h1>hii.. </h1>
-<h2>checking</h2>
-<p>its awesome</p>
+   <head><!--font open sans included-->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
    
-</body>
-</head>
-<script></script>
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+   <!-- Optional theme -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   <!--jquery included-->
+   <script src="js/jquery-3.1.1.min.js"></script>
+	  
+   <title>CREATIVE TIM</title>
+	
+	
+   <style>
+      ul{
+	     list-style-type:none;
+		 margin:0px;
+		 padding:30px;
+		 margin-top:0;
+		 overflow:hidden;
+		 width:100vw;
+		 background-color:#f1f1f1;
+		 height:15px;
+	     top:0px;
+		 font-family:'Open Sans', sans-serif;
+		 display:block;
+		 z-index:70;
+		 text-align:center;
+		}
+		
+	  li a{
+		 color:#000;
+		 padding:8px 16px;
+		 text-decoration:none; 
+         padding:0px 0px 0px 0px;
+		 line-height:10px;
+		  }
+		  
+	  li{
+         display:inline !important;
+         padding-left=15px;
+         padding-right:15px;
+	     float:left;
+        }
+		
+	  <!--Change the link color on hover-->
+      li a:hover {
+         background-color:blue;
+         color:blue;
+                 }	
+		
+	  .parallax{
+		 height:600px;
+	     background-image:url("images/1.jpg");
+	     background-attachment:fixed;
+		 background-postion:center;
+		 background-repeat:no-repeat;
+		 background-size:cover;
+		 width:100vw;
+		 margin-right:0px;
+		 margin-top:0px;
+		       }
+			   
+		.marg{
+              margin-top:20px;       }		
+			   
+			   
+	  .TIM{
+		 font-size:25px;
+		 padding:10px;
+		  }
+		  
+	  .list{
+		 margin-left:10px;
+		 margin-top:5px;
+		 font-size:17px;
+		  }
+		  
+	  .breakline{
+         border:2px solid white;
+		 margin-top:15px; 
+         }
+		 
+	  .line{
+         border:2px solid #c5a47e;
+		 margin-top:15px;
+		 width:34vw;;
+		 }
+		 
+	  .website-name{
+	     text-align:center;
+	     font-size:6em;
+	     color:#FFF;
+	     margin-top:100px;
+	   }
+	   
+	  .description{
+	     text-align:center;
+		 font-size:20px;
+		 padding:40px;
+		 color:#FFF;
+		 margin-top:20px;
+		  }
+		  
+	  input[type="submit"]{
+         background:red;
+         color:white;
+	     width:80px;
+           }
+		   
+	  .header{
+		 padding:0px 0px 0px 0px;
+		 border-bottom:4px solid green ;
+         position:fixed;
+         top:0px;
+         width:100%;
+         z-index:50;
+		  }	
+		  
+	  input{
+		 width:120px;
+		 }
+		 button{
+		 padding:5px;
+		 margin:5px;}
+		 
+	  .about{
+		 font-size:2.5em;
+		 text-align:center;
+		 margin-top:110px;
+		   }
+		  
+	  p{
+		 color: #777777;
+         font-family: 'Open Sans', sans-serif;
+         font-size: 1.6em;
+         line-height: 1.4737;
+         font-weight: 400;
+         margin-top:20px;
+         text-align:center;
+         margin-bottom:100px;		 
+				 }
+				 
+      .left{
+	     margin-right:120px;
+		 }
+		 
+	  #map {
+         width: 100vw;
+         height: 400px;
+         background-color: grey;
+		 margin-bottom:0;
+		 
+		 margin-left:0px;
+		 
+            }
+			
+	  #para2, #para3, #para4{
+	     display:none;
+		 }
+		 .hed{
+		 font-size:1.65em;}
+		 
+		 .des{
+		 font-size:.8em;
+		 margin-top:25px;
+		 
+		 margin-bottom:0px;}
+		 .number{
+		 font-size:1.6em;
+		 margin-bottom:5px;
+		 color:brown;
+		 }
+		 
+		.meet{
+		 display:block;
+		 margin-left:0px;
+		 z-index:70;
+		 background-color:#f1f1f1;
+		 
+		 width:400px;
+		 height:350px;
+		 
+		 box-sizing: border-box;
+		 text-align:center;
+		 }
+		
+		
+	  ol{
+         font-size: 14px;
+         font-family: 'Open Sans', sans-serif;
+		 color: white;
+         padding: 10px 15px;
+         text-align: center;
+		 box-sizing: border-box;
+		 background-color:#FF5722;
+		 display: block;
+		 height:50px;
+		 margin-bottom:0px;
+		
+		 }
+		 .left-content{
+		 margin-left:50px;
+		 }
+		 
+		 
+		 .social{
+		 float:right;
+		 margin-right:50px;
+		 }
+		 
+		 .rubik{
+		 
+		 margin-left:450px;
+		 }
+		 h3{
+		 font-size:2.2em;
+		 text-align:center;
+		 margin-top:150px;
+		 
+		 }
+		 
+	  </style>
+   </head>
+
+   <body>
+     <div class="navi">
+       <ul>
+         	<div class="header">  
+			<div class="TIM"><li>CREATIVE TIM</li></div>
+			  <div class="list"> <li><a href="#About">About</a></li>
+		      <li><a href="#What we do">What we do</a></li>
+		       <li><a href="#Famous Freebies">Famous Freebies</a></li>
+              <li><a href="#Testimonials">Testimonials</a></li>
+			  <li><a href="#Team">Team</a></li> 
+		       <li><a href="#Numbers">Numbers</a></li>
+               <li><a href="#Contact">Contact</a>
+			   <li><input type="serach" placeholder="search "><input type="submit" value="search"></li>
+			   <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></li>
+			   <li><a href="#https://plus.google.com/"><img src="images/google+.png" width="20" height="10"/></a></li>
+			   <li><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
+			   <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a></li>   
+			   </div>	</div></div>
+             </ul>			   
+            </div></div>			   
+	    
+		
+		
+	  
+	  
+	  
+      <div class="row parallax">
+	     <div class="row website-name">CREATIVE TIM</div>
+		 <div class="row">
+		 <div class="col-md-4 col-md-offset-4 breakline"> </div>
+		 </div>
+		 <div class="row description">Awesome Bootstrap freebies and templates to build better website </div>
+	  </div>
+	  <div class="row about ">ABOUT CREATIVE TIM</div>
+	  <div class="row">
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+	  <p>Creative Tim is a startup that creates design tools that make the web development process </br>faster and easier. We love the web and care deeply for how users interact with a digital<br/> product. We power businesses and individuals to create better looking web projects around <br/>the world.</p>
+      	<div class="grid">
+      <div class="row">
+	  
+      <div class="col-md-3 col-md-offset-2"><img src="images/2.jpg" width="290" height="350"/></div>
+       <div class="col-md-3 "><img src="images/4.jpg" width="290" height="350"/></div>
+	   
+      <div class="col-md-3 "><img src="images/7.jpg" width="230" height="350"/></div>
+
+	  <div class="row">
+      <div class="marg">	  
+      <div class="col-md-3 col-md-offset-2 "><img src="images/3.jpg" width="295" height="370"/></div>
+       <div class="col-md-3 "><img src="images/5.jpg" width="290" height="350"/></div>
+	   
+      <div class="col-md-3 "><img src="images/8.jpg" width="245" height="350"/></div></div>	</div>
+	  
+     <div class="row about ">WHAT WE DO</div>
+	 <div class="row">
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+	  <div class="col-md-3 col-md-offset-2"><img src="images/tool.png" width="70" height="70"/>
+	  <div class="col-md-3 " >Create UI Tools</div>
+	 <div class="col-md-3 col-md-offset-1" >We have created the tools that will help you<br/> in your next design project. From plugins to ,br/>complex kits, we've got you covered in all<br/> areas regarding front-end development.</div></div>
+	  <div class="col-md-3"><img src="images/free.png" width="70" height="70"/></div>
+	  <div class="col-md-3">Share Freebies</div>
+	  <div class="col-md-3">Everything that we used to create our <br/>platform can be downloaded for free and <br/>guess what, people love free stuff. People <br/>have already trusted and used them in<br/> thousands of sites.</div></div>
+	  <div class="col-md-3 "><img src="images/hack.png" width="70" height="70"/>
+	  <div class="col-md-3">Power Hackathons</div>
+	 	 <div class="col-md-3">We've sponsored many hackathons around<br/> the world with the tools that they need to <br/>make awesome web applications. We like to <br/>help where we can, and our tools go hand in <br/>hand with startups.</div></div>
+   
+   
+   <div class="row">
+   <h3>OUR FAMOUS FREEBIES</h3>
+   
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+   <p>Check out the most popular freebies from our platform. We would love to hear <br/>your feedback.</p>
+   
+   
+   
+   
+   
+  <div class="row">
+   <h3>OUR PREMIUM UI TOOLS</h3>
+   
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+   <p>Check out these UI Tools, they will speed up your development process for sure!</p>
+   
+         
+   
+   
+   
+   <!--what people think section starts-->
+   <div class="row">
+   <h3>WHAT PEOPLE THINK...</h3>
+   
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+   
+   
+   
+   
+   <div class="row para" id="para1">
+   <p> Hey Creative-Tim team. Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed</p>
+   </div>
+   <div class="row para" id="para2">
+   <p> Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you. I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)</p>
+   </div>
+   <div class="row para" id="para3">
+   <p> Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. hope to meet u guys one day.</p>
+   </div>
+   <div class="row para" id="para4">
+   <p> Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!</p>
+   </div>
+   <div class="row">
+   <div class="col-md-offset-4 col-md-1" id="edwin">EDWIN REDE</div>
+   <div class="col-md-1" id="abhi">ABHI KHATRI
+                      </div>
+   <div class="col-md-1" id="fars">FARS KID
+</div>
+   <div class="col-md-1" id="nik">KOLODZIEJ NIKOLAI</div>
+   </div>
+   </div>
+
+   <!--what people think section ends-->
+   <div class="row">
+   <div class="col-md-2 col-md-offset-3"></div>
+   <div class="col-md-1 "></div>
+   <div class="col-md-2 "></div>
+   
+   <h3>MEET OUR TEAM</h3>
+   
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+    
+	<!--<div class="team">
+      <div class="row">
+	  <div class="col-md-3">
+	  <div class="image"><img src="images/21.jpg" width="50" height="50"/><br/></div>
+      <div class=" name">ELENA CONACEL<br/></div>
+	  <div class="description">Elena is one of the co-founders <br/>and takes care of growth, product <br/>development and partnerships.<br/> She is analytical, driven and <br/>adapts easily to new conditions, <br/>while trying to keep everyone on <br/>track.</div><br/></div></div>
+	  
+	  <div class="col-md-3 ">
+	   <div class="col-md-3 image"><img src="images/22.jpg" width="50" height="50"/><br/>
+	  <div class=" name">DIANA CALIMAN<br/>
+	  <div class="description">Diana is the person behind our <br/>social media channels, she takes <br/>care of our users' community<br/> and communication. She is<br/> ambitious, hard-working,<br/> instantly likeable and fun to be <br/>around.</div><br/></div></div>
+	  
+	  <div class="col-md-3 ">
+	   <div class="col-md-3 image"><img src="images/23.jpg" width="50" height="50"/><br/>
+	  <div class="col-md-2 name">ALEX PADURARU<br/>
+	  <div class="description">Alex is one of the co-founders<br/>and drives the technical strategy<br/> of the platform, customer <br/>support and brand. He is level-<br/>headed, smart and with a taste<br/> for simple, aesthetic design.</div><br/></div></div>
+	  
+	  <div class="col-md-3 ">
+	   <div class="col-md-3 image"><img src="images/24.jpg" width="50" height="50"/><br/>
+	  <div class="col-md-2 name">BENIAMIN MARCU<br/>
+	  <div class="description">Beni is the guy responsible for <br/>keeping the platform in check,<br/> improving its functionality and <br/>adding new features. He is<br/> driven, always open for learning <br/>more, friendly and a fan of Ruby <br/>on Rails.</div><br/></div></div>
+	</div>-->
+   <div class="row">
+   <h3>NUMBERS DON'T LIE</h3>
+   
+		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  </div>
+   <p>"Started from the bottom now we're here" - Drake</p>
+   
+   <div class="grid">
+      <div class="row">
+      <div class="col-md-3 col-md-offset-2 hed">Users<br/>
+	  <div class="des">Businesses and Professionals</div><br/>
+	  <div class="number">116.000+</div>
+	  </div>
+	  
+       <div class="col-md-3 hed ">Downloads<br/>
+	   <div class="des">Freebies, Templates & UI Kits</div><br/>
+	  <div class="number">186.000+</div>
+	   
+	   </div>
+	   
+      <div class="col-md-3 hed ">Countries</div><br/>
+    <div class=" col-md-2 des">Where we made sponsorships</div><br/>
+	  <div class="col-md-3 number">14</div>
+   </div>	  
+
+	  
+  
+	<div class="meet">
+	   <h2> Where to meet ?</h2>
+	    <h4>N-81, Barakhamba Road,  Block N, Connaught Place, New Delhi</h4>
+	    <h2>Want to say hello?</h2>
+	   <button name="subject" type="submit" value="CONTACT US">CONTACT US</button><br/>
+	   <h2>Thank you for 948 shares!</h2>
+	   <button name="subject" type="submit" value="FACEBOOK">FACEBOOK</button>
+	   <button name="subject" type="submit" value="TWITTER">TWITTER</button></div>
+    
+    <div id="map"></div>
+	
+	   
+	
+	
+	
+		
+			<div class="footer">
+			<ol>
+			  <div class="left-content"> 
+			  <li><a href="#https://www.creative-tim.com/?ref=presentation-page">Home</a></li>
+		      <li><a href="#http://www.creative-tim.com/contact-us">Contact</a></li>
+		       <li><a href="#http://blog.creative-tim.com/">Blog</a></li>
+              <li><a href="#http://www.creative-tim.com/sponsorships">Sponsorships</a></li>
+			  </div>
+			  <div class="rubik">
+			  <li><a href="#http://demos.creative-tim.com/rubik">© 2016 <b>Creative Tim</b>, page made with <b>Rubik</b></a></li></div>
+			  <div class="social">
+			   <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="22" height="12"/></a></li>
+			   <li><a href="#https://plus.google.com/"><img src="images/google+.png" width="22" height="12"/></a></li>
+			   <li><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="22" height="12"/></a></li>
+			   <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="24" height="14"/></a></li>   
+			   </div>
+       </ol></div>			   
+   </body>
+ 
+<script>
+   $("#edwin").click(function(){
+   $("#para1").show();
+   $(".para").hide();
+   });
+   
+   $("#abhi").click(function(){
+   $("#para2").show();
+   $(".para").hide();
+   
+   });
+   
+   $("#fars").click(function(){
+   $("#para3").show();
+   $(".para").hide();
+   
+   });
+   
+   $("#nik").click(function(){
+   $("#para4").show();
+   $(".para").hide();
+   
+   });
+
+</script>
+<script>
+      function initMap() {
+        var uluru = {lat: 28.63278, lng: 77.21972};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFiCirt-utiEMWkamnzkfOXhu1jtJvTY&callback=initMap">
+    </script>
 </html>
