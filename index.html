@@ -18,6 +18,11 @@
 	
 	
    <style>
+      img:hover{
+	  border:2px solid black;
+	  }
+     
+   
       ul{
 	     list-style-type:none;
 		 margin:0px;
@@ -67,9 +72,7 @@
 		 margin-top:0px;
 		       }
 			   
-		.marg{
-              margin-top:20px;       }		
-			   
+		
 			   
 	  .TIM{
 		 font-size:25px;
@@ -114,6 +117,16 @@
 	     width:80px;
            }
 		   
+		  
+		   
+	  button[type="submit"]{
+         background:#FF5722;
+         color:white;
+	     width:110px;
+		 text-align:center;
+           } 
+		   
+		   
 	  .header{
 		 padding:0px 0px 0px 0px;
 		 border-bottom:4px solid green ;
@@ -130,12 +143,19 @@
 		 padding:5px;
 		 margin:5px;}
 		 
+		 
+		 
 	  .about{
 		 font-size:2.5em;
 		 text-align:center;
-		 margin-top:110px;
+		 margin-top:550px;
 		   }
-		  
+		 
+		 
+	  .marg{
+	     text-align:center;
+		 }
+		    
 	  p{
 		 color: #777777;
          font-family: 'Open Sans', sans-serif;
@@ -145,48 +165,50 @@
          margin-top:20px;
          text-align:center;
          margin-bottom:100px;		 
-				 }
+		 }
 				 
       .left{
 	     margin-right:120px;
 		 }
 		 
 	  #map {
-         width: 100vw;
+         width: 67vw;
          height: 400px;
          background-color: grey;
 		 margin-bottom:0;
-		 
-		 margin-left:0px;
-		 
-            }
-			
+		 margin-left:280px;
+		 }
+	
 	  #para2, #para3, #para4{
 	     display:none;
 		 }
-		 .hed{
-		 font-size:1.65em;}
 		 
-		 .des{
+	  .hed{
+		 font-size:1.65em;
+		 }
+		 
+	  .des{
 		 font-size:.8em;
 		 margin-top:25px;
-		 
-		 margin-bottom:0px;}
-		 .number{
-		 font-size:1.6em;
+		 margin-bottom:0px;
+		 }
+		
+	  .number{
+		 font-size:1.9em;
 		 margin-bottom:5px;
+		 text-align:center;
+		 border-bottom:1px solid #efefef;
 		 color:brown;
 		 }
 		 
-		.meet{
+	  .meet{
 		 display:block;
 		 margin-left:0px;
-		 z-index:70;
+		 z-index:170;
 		 background-color:#f1f1f1;
-		 
-		 width:400px;
-		 height:350px;
-		 
+		 margin-top:130px;
+		 width:35vw;
+		 height:400px;
 		 box-sizing: border-box;
 		 text-align:center;
 		 }
@@ -203,30 +225,437 @@
 		 display: block;
 		 height:50px;
 		 margin-bottom:0px;
-		
 		 }
-		 .left-content{
+		 
+	  .left-content{
 		 margin-left:50px;
 		 }
-		 
-		 
-		 .social{
+		
+	  .social{
 		 float:right;
 		 margin-right:50px;
 		 }
 		 
-		 .rubik{
-		 
+	  .rubik{
 		 margin-left:450px;
 		 }
-		 h3{
+		 
+	  h3{
 		 font-size:2.2em;
 		 text-align:center;
-		 margin-top:150px;
-		 
+		 margin-top:250px;
 		 }
 		 
-	  </style>
+	   button{
+		 text-align:center;
+		 margin-right:0px;
+		 border-radius:20px;
+		 margin-right:5px;
+		 margin-top:15px;
+		 }
+		 
+	  .first-line{
+		 margin-bottom:20px;
+		 margin-left:5px;
+		 }
+		 
+	  .second-line{
+		 margin-top:35px;
+		 }
+		 
+	  .logo{
+		 margin-top:60px;
+		 text-align:center;
+		 }
+		 
+	  .second{
+		 margin-top:200px;
+		 }
+		 
+	  .logo-name{
+		 border-bottom: 1px solid #efefef;
+		 margin-top:opx;
+		 text-align:center;
+		 font-size:20px;
+		 }
+		 
+	  .logo-des{
+		 border-bottom: 1px solid #efefef;
+		 margin-top:opx;
+		 text-align:center;
+		 font-size:15px;
+		 margin-bottom:150px;
+		 }
+		 
+	  .des{
+		 font-size:15px;
+		 margin-bottom:5px;
+		 text-align:center;
+		 border-bottom:1px solid #efefef;
+		 }
+		 
+	  .user{
+		 font-size:20px;
+		 text-align:center;
+		 }
+		 
+	  h6{
+		 display:inline;
+		 text-align:center;
+		 }
+		
+	  .pad{
+		 margin-bottom:100px;
+		}
+		 
+	  .our{
+		 img{
+		 border:2px solid brown;
+		 }
+		 
+      .f1{
+	     font-size:25px;
+		 text-align:center;
+		 margin-bottom:15px;
+		 }
+		 
+      .f2{
+	     font-size:20px;
+		 text-align:center;
+		 margin-bottom:3px;
+		 margin-top:5px;
+		 }
+		 
+	  .f3{
+	     font-size:11px;
+		 text-align:center;
+		 margin-bottom:25px;
+		 }
+		 
+	  .f4{
+		 text-align:center;
+		 border-bottom:1px solid #efefef;
+		 }
+		 
+	  .f5{
+		font-size:5px;
+		}
+		
+		
+		<!--media query starts-->
+	 @media(max-width:750px){
+	  ul{
+	     list-style-type:none;
+		 margin:0px;
+		 padding:16.4px;
+		 margin-top:0;
+		 overflow:hidden;
+		 width:54.7vw;
+		 background-color:#f1f1f1;
+		 height:8.2px;
+	     top:0px;
+		 font-family:'Open Sans', sans-serif;
+		 display:block;
+		 z-index:70;
+		 text-align:center;
+		}
+		
+	  li a{
+		 color:#000;
+		 padding:4.37px 8.75px;
+		 text-decoration:none; 
+         padding:0px 0px 0px 0px;
+		 line-height:5.47px;
+		  }
+		  
+	  li{
+         display:inline !important;
+         padding-left=8.2px;
+         padding-right:8.2px;
+	     float:left;
+        }
+		
+	  <!--Change the link color on hover-->
+      li a:hover {
+         background-color:blue;
+         color:blue;
+                 }	
+		
+	  .parallax{
+		 height:326.82px;
+	     background-image:url("images/1.jpg");
+	     background-attachment:fixed;
+		 background-postion:center;
+		 background-repeat:no-repeat;
+		 background-size:cover;
+		 width:54.7vw;
+		 margin-right:0px;
+		 margin-top:0px;
+		       }
+	   
+	  .TIM{
+		 font-size:13.67px;
+		 padding:5.47px;
+		  }
+		  
+	  .list{
+		 margin-left:5.47px;
+		 margin-top:3.73px;
+		 font-size:9.3px;
+		  }
+		  
+	  .breakline{
+         border:1.1px solid white;
+		 margin-top:8.2px; 
+         }
+		 
+	  .line{
+         border:1.1px solid #c5a47e;
+		 margin-top:8.2px;
+		 width:18.6vw;;
+		 }
+		 
+	  .website-name{
+	     text-align:center;
+	     font-size:3.28em;
+	     color:#FFF;
+	     margin-top:54.7px;
+	   }
+	   
+	  .description{
+	     text-align:center;
+		 font-size:10.94px;
+		 padding:21.88px;
+		 color:#FFF;
+		 margin-top:11px;
+		  }
+		  
+	  input[type="submit"]{
+         background:red;
+         color:white;
+	     width:43.8px;
+           }
+
+	  button[type="submit"]{
+         background:#FF5722;
+         color:white;
+	     width:60.17px;
+		 text-align:center;
+           } 
+		    
+	  .header{
+		 padding:0px 0px 0px 0px;
+		 border-bottom:2.188px solid green ;
+         position:fixed;
+         top:0px;
+         width:100%;
+         z-index:50;
+		  }	
+		  
+	  input{
+		 width:65.64px;
+		 }
+		 
+	  button{
+		 padding:2.73px;
+		 margin:2.73px;
+		 }
+		
+	  .about{
+		 font-size:1.36em;
+		 text-align:center;
+		 margin-top:246px;
+		   }
+		   
+	  .marg{
+		 text-align:center;
+          }
+		  
+	  p{
+		 color: #777777;
+         font-family: 'Open Sans', sans-serif;
+         font-size: .88em;
+         line-height: .8;
+         font-weight: 218.8;
+         margin-top:10.94px;
+         text-align:center;
+         margin-bottom:54.7px;		 
+				 }
+				 
+      .left{
+	     margin-right:65.64px;
+		 }
+		 
+	  #map {
+         width: 36.5vw;
+         height: 218.8px;
+         background-color: grey;
+		 margin-bottom:0;
+		 margin-left:153.16px;
+            }
+			
+	  #para2, #para3, #para4{
+	     display:none;
+		 }
+		 
+	  .hed{
+		 font-size:.9em;
+		 }
+		 
+	  .des{
+		 font-size:.43em;
+		 margin-top:13.7px;
+		 margin-bottom:0px;
+		 }
+	
+	  .number{
+		 font-size:1em;
+		 margin-bottom:2.73px;
+		 text-align:center;
+		 border-bottom:.55px solid #efefef;
+		 color:brown;
+		 }
+		 
+	  .meet{
+		 display:block;
+		 margin-left:0px;
+		 z-index:170;
+		 background-color:#f1f1f1;
+		 margin-top:71.11px;
+		 width:19.145vw;
+		 height:218.8px;
+		 box-sizing: border-box;
+		 text-align:center;
+		 }
+	
+	  ol{
+         font-size: 7.7px;
+         font-family: 'Open Sans', sans-serif;
+		 color: white;
+         padding: 5.5px 8.2px;
+         text-align: center;
+		 box-sizing: border-box;
+		 background-color:#FF5722;
+		 display: block;
+		 height:27.4px;
+		 margin-bottom:0px;
+		 }
+		 
+	  .left-content{
+		 margin-left:27.4px;
+		 }
+		  
+	  .social{
+		 float:right;
+		 margin-right:27.4px;
+		 }
+		 
+	  .rubik{
+		 margin-left:246.2px;
+		 }
+		 
+  	  h3{
+		 font-size:1.2em;
+		 text-align:center;
+		 margin-top:82px;
+		 }
+		 
+	   button{
+		 text-align:center;
+		 margin-right:0px;
+		 border-radius:10.94px;
+		 margin-right:2.7px;
+		 margin-top:8.2px;
+		 }
+		 
+	  .first-line{
+		 margin-bottom:11px;
+		 margin-left:2.7px;
+		 }
+		 
+	  .second-line{
+		 margin-top:19.15px;
+		 }
+		 
+	  .logo{
+		 margin-top:32.82px;
+		 text-align:center;
+		 }
+		 
+	  .second{
+		 margin-top:109.4px;
+		 }
+		 
+	  .logo-name{
+		 border-bottom: .55px solid #efefef;
+		 margin-top:opx;
+		 text-align:center;
+		 font-size:11px;
+		 }
+		 
+	  .logo-des{
+		 border-bottom: .55px solid #efefef;
+		 margin-top:opx;
+		 text-align:center;
+		 font-size:8.2px;
+		 margin-bottom:86px;
+		 }
+		 
+	  .des{
+		 font-size:8.2px;
+		 margin-bottom:2.73px;
+		 text-align:center;
+		 border-bottom:.55px solid #efefef;
+		 }
+		 
+	  .user{
+		 font-size:11px;
+		 text-align:center;
+		 }
+		 
+	  h6{
+		 display:inline;
+		 text-align:center;
+		 }
+		 
+	  .pad{
+		 margin-bottom:54.7px;
+		}
+		 
+	  .our{
+		 img{
+		 border:1.1px solid brown;}
+		 }
+		
+      .f1{
+	     font-size:11px;
+		 text-align:center;
+		 margin-bottom:8.2px;
+		 }
+		 
+	  .f2{
+	     font-size:8.2px;
+		 text-align:center;
+		 margin-bottom:1.8px;
+		 margin-top:2.4px;
+		 }
+		 
+	  .f3{
+	     font-size:6px;
+		 text-align:center;
+		 margin-bottom:13.7px;
+		 }
+		 
+	  .f4{
+		 text-align:center;
+		 border-bottom:.55px solid #efefef;
+		 }
+		 
+	  .f5{
+		 font-size:2.7px;}
+		 }
+		
+	 </style>
    </head>
 
    <body>
@@ -242,249 +671,371 @@
 		       <li><a href="#Numbers">Numbers</a></li>
                <li><a href="#Contact">Contact</a>
 			   <li><input type="serach" placeholder="search "><input type="submit" value="search"></li>
-			   <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></li>
+			  <div class="social"> <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></li>
 			   <li><a href="#https://plus.google.com/"><img src="images/google+.png" width="20" height="10"/></a></li>
 			   <li><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
-			   <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a></li>   
+			   <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a></li> </div>  
 			   </div>	</div></div>
              </ul>			   
             </div></div>			   
-	    
-		
-		
-	  
-	  
 	  
       <div class="row parallax">
 	     <div class="row website-name">CREATIVE TIM</div>
 		 <div class="row">
-		 <div class="col-md-4 col-md-offset-4 breakline"> </div>
+		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 breakline"> </div>
 		 </div>
 		 <div class="row description">Awesome Bootstrap freebies and templates to build better website </div>
 	  </div>
+	  
+	  <!--about creative tim-->
 	  <div class="row about ">ABOUT CREATIVE TIM</div>
 	  <div class="row">
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
+		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
 	  <p>Creative Tim is a startup that creates design tools that make the web development process </br>faster and easier. We love the web and care deeply for how users interact with a digital<br/> product. We power businesses and individuals to create better looking web projects around <br/>the world.</p>
       	<div class="grid">
-      <div class="row">
-	  
-      <div class="col-md-3 col-md-offset-2"><img src="images/2.jpg" width="290" height="350"/></div>
-       <div class="col-md-3 "><img src="images/4.jpg" width="290" height="350"/></div>
-	   
-      <div class="col-md-3 "><img src="images/7.jpg" width="230" height="350"/></div>
+      <div class="row first">
+	  <div class="first-line">
+      <div class="col-md-3 col-md-offset-2 col-xs-3 col-xs-offset--2"><img src="images/2.jpg" width="290" height="350"/></div>
+       <div class="col-md-3 col-xs-3"><img src="images/4.jpg" width="290" height="350"/></div> 
+      <div class="col-md-3 col-xs-3"><img src="images/7.jpg" width="290" height="350"/></div></div></div></div>
 
-	  <div class="row">
-      <div class="marg">	  
-      <div class="col-md-3 col-md-offset-2 "><img src="images/3.jpg" width="295" height="370"/></div>
-       <div class="col-md-3 "><img src="images/5.jpg" width="290" height="350"/></div>
-	   
-      <div class="col-md-3 "><img src="images/8.jpg" width="245" height="350"/></div></div>	</div>
+       <div class="second-line">
+    <div class="col-md-3 col-xs-3"><img src="images/3.jpg" width="300" height="350"/></div> 
+      <div class="col-md-3 col-xs-3"><img src="images/5.jpg" width="300" height="350"/></div>
+	  <div class="col-md-3 col-xs-3"><img src="images/6.jpg" width="300" height="350"/></div>
+      <div class="col-md-3 col-xs-3"><img src="images/8.jpg" width="300" height="350"/></div></div>	</div></div>
+	 
 	  
-     <div class="row about ">WHAT WE DO</div>
+	  
+	  <!--what we do section  starts-->
+	  <div class="row about ">WHAT WE DO</div>
 	 <div class="row">
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
+		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
-	  <div class="col-md-3 col-md-offset-2"><img src="images/tool.png" width="70" height="70"/>
-	  <div class="col-md-3 " >Create UI Tools</div>
-	 <div class="col-md-3 col-md-offset-1" >We have created the tools that will help you<br/> in your next design project. From plugins to ,br/>complex kits, we've got you covered in all<br/> areas regarding front-end development.</div></div>
-	  <div class="col-md-3"><img src="images/free.png" width="70" height="70"/></div>
-	  <div class="col-md-3">Share Freebies</div>
-	  <div class="col-md-3">Everything that we used to create our <br/>platform can be downloaded for free and <br/>guess what, people love free stuff. People <br/>have already trusted and used them in<br/> thousands of sites.</div></div>
-	  <div class="col-md-3 "><img src="images/hack.png" width="70" height="70"/>
-	  <div class="col-md-3">Power Hackathons</div>
-	 	 <div class="col-md-3">We've sponsored many hackathons around<br/> the world with the tools that they need to <br/>make awesome web applications. We like to <br/>help where we can, and our tools go hand in <br/>hand with startups.</div></div>
-   
-   
+	  <div class="do">
+     
+	  <div class="row first">
+	  <div class="logo">
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/tool.png" width="80" height="80"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/free.png" width="80" height="80"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/hack.png" width="80" height="80"/></div></div>	</div></div>
+	  
+	  <div class="logo-name">
+      <br/><div class="f1"><div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Create UI Tools</div>
+	   <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Share Freebies</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Power Hackathons</div></div></div></div></div>
+	
+	  <div class="logo-des">
+      <br/><div class="f2"><div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">We have created the tools that will help you<br/> in your next design project. From plugins to <br/>complex kits, we've got you covered in all<br/> areas regarding front-end development.</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Everything that we used to create our <br/>platform can be downloaded for free and <br/>guess what, people love free stuff. People <br/>have already trusted and used them in<br/> thousands of sites.</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> We've sponsored many hackathons around<br/> the world with the tools that they need to <br/>make awesome web applications. We like to <br/>help where we can, and our tools go hand in <br/>hand with startups.</div></div></div>
+	  </div>
+	 <!--what we do section ends-->	 
+     
+   <!-- our famous freebies start-->
    <div class="row">
    <h3>OUR FAMOUS FREEBIES</h3>
-   
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
+	  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
-   <p>Check out the most popular freebies from our platform. We would love to hear <br/>your feedback.</p>
+      <p>Check out the most popular freebies from our platform. We would love to hear <br/>your feedback.</p>
    
+   <div class="famous">
+	  <div class="row first">
+    <div class="col-md-3 "><img src="images/12.jpg" width="365" height="273"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/13.jpg" width="365" height="273"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/14.jpg" width="365" height="273"/></div></div></div>
+	  
+	  
+      <br/><div class="f2"><div class="col-md-3 col-xs-3 ">3.100+ Downloads</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">8.500+ Downloads</div>
+      <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1">6.200+ Downloads</div></div></div></div>
+	
+	    
+      <br/><div class="f1"><div class="f1"><div class="col-md-3 col-xs-3 ">Gaia Bootstrap Template</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Light Bootstrap Dashboard</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Paper Kit</div></div></div></div>
+	  
+	  
+	  <br/><div class="f3"><div class="col-md-3 col-xs-3"> Gaia Bootstrap Template is the free demo of Gaia Bootstrap Template PRO </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Light Bootstrap Dashboard is an admin dashboard template designed to be beautiful and simple. It is built on top of Bootstrap 3 and it is fully responsive.</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Paper Kit is a free Bootstrap UI kit that can get you going in a new creative direction! To say the least, it's different since it's not material, flat or iOS inspired.</div></div></div>	</div>
+	  
+	  
+	    
+      <br/><div class="col-md-3 col-xs-3 "><button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button>
+	  </div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button></div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> <button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button></div></div></div>
+	  
+	  
+	  
+	 
+	  
+	  <div class="row second">
+	  
+      <div class="col-md-3 col-xs-3 "><img src="images/9.jpg" width="365" height="273"/></div>
+       <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/10.jpg" width="365" height="273"/></div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/11.jpg" width="365" height="273"/></div></div></div>
+	  
+      <br/><div class="f2"> <div class="col-md-3 col-xs-3  ">Just Launched</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Just Launched</div>  
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">19.200+ Downloads</div></div></div>	</div>
+	  
+	  <br/><div class="f1"><div class="col-md-3 col-xs-3 "> Material Dashboard</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Material Dashboard</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Get Shit Done Kit</div></div></div>	</div>
+	  
+	  
+	  <br/><div class="f3"><div class="col-md-3 col-xs-3 "> Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design </div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements.</div></div>	</div>
    
+      <br/><div class="f4"><div class="col-md-3 col-xs-3 "><button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button>
+	  </div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button>
+	  </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> <button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button></div></div></div></div>
+	  
+   <!-- our famous freebies ends-->
    
-   
-   
+   <!--premium ui tools-->
   <div class="row">
-   <h3>OUR PREMIUM UI TOOLS</h3>
-   
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
+      <h3>OUR PREMIUM UI TOOLS</h3>
+	  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
-   <p>Check out these UI Tools, they will speed up your development process for sure!</p>
+      <p>Check out these UI Tools, they will speed up your development process for sure!</p>
    
-         
+      <div class="pre">
+	  <div class="row first">
+      <div class="col-md-3 col-xs-3 "><img src="images/18.jpg" width="365" height="273"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/19.jpg" width="365" height="273"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/20.jpg" width="365" height="273"/></div></div></div>
+	  
+	  
+      <div class="f2"><div class="col-md-3 col-xs-3 ">Template from $19</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">UI Kit from $49</div>
+      <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1">UI Kit from $39</div></div></div></div>
+	
+	    
+      <br/><div class="f1"><div class="col-md-3 col-xs-3 ">Rubik Presentation Page</div>
+      <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1">Paper Kit PRO</div>
+	  <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1"> Get Shit Done PRO</div></div></div></div>
+	  
+	  
+	  <br/><div class="f3"><div class="col-md-3 col-xs-3  "> Create your own page with many combinations! We created a builder that resembles a rubik cube. All the possible sections are simply awesome and will create an amazing looking presentation page.
+<    </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Paper Kit PRO is a set of coded web components built over Bootstrap, having a design that resembles paper. The kit comes with a huge number of customisable components.</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Get Shit Done Kit Pro comes with a huge number of customisable components. The components are not only designed to be pixel perfect and light but are also easy to use and match each other perfectly.</div></div></div></div>
+	  
+	  
+	 <br/><div class="f4"><div class="col-md-3 col-xs-3  "> <button type="submit" value="Know More">Know More</button> </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Know More">Know More</button></div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Know More">Know More</button></div></div></div>	</div>
+	  
+	  
+	  
+	    
+      <div class="row second">
+	  
+      <div class="col-md-3 col-xs-3 "><img src="images/15.jpg" width="365" height="273"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/16.jpg" width="365" height="273"/></div> 
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/17.jpg" width="365" height="273"/></div></div>	</div>
+	  
+	  
+      <br/><div class="f2"><div class="col-md-3 col-xs-3  ">UI Kit from $79</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Template from $29</div>
+      <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1">Dashboard from $39</div></div></div></div>
+	
+	    
+      <br/><div class="f1"><div class="col-md-3 col-xs-3 ">Material Kit PRO</div>
+      <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1">Gaia Bootstrap Template PRO</div>
+	  <div class="col-md-3  col-md-offset-1 col-xs-3 col-xs-offset-1"> Light Bootstrap Dashboard PRO</div></div></div></div>
+	  
+	  
+	  <br/><div class="f3"><div class="col-md-3 col-xs-3 "> Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design. If you like Google's Material Design, you will love this kit! </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Gaia is a multi-page Bootstrap Template designed to be easy to use and stylish. If you are trying to create a new website, presentation page or blog, this is definitely a great fit for you.</div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Light Bootstrap Dashboard PRO is a Bootstrap Admin Theme designed to look simple and beautiful. It comes integrated with a large number of plugins redesigned to fit in with the rest of the elements.
+       </div></div>	</div>	</div>	
    
-   
-   
+       
+	  <br/>><div class="f4"><div class="col-md-3 col-xs-3 "> <button type="submit" value="Know More">Know More</button> </div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Know More">Know More</button></div>
+      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Know More">Know More</button></div></div>	</div></div>
+	  
+	  
    <!--what people think section starts-->
-   <div class="row">
-   <h3>WHAT PEOPLE THINK...</h3>
-   
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
+      <div class="row">
+      <h3>WHAT PEOPLE THINK...</h3>
+		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
-   
-   
-   
-   
-   <div class="row para" id="para1">
-   <p> Hey Creative-Tim team. Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed</p>
-   </div>
-   <div class="row para" id="para2">
-   <p> Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you. I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)</p>
-   </div>
-   <div class="row para" id="para3">
-   <p> Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. hope to meet u guys one day.</p>
-   </div>
-   <div class="row para" id="para4">
-   <p> Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!</p>
-   </div>
-   <div class="row">
-   <div class="col-md-offset-4 col-md-1" id="edwin">EDWIN REDE</div>
-   <div class="col-md-1" id="abhi">ABHI KHATRI
-                      </div>
-   <div class="col-md-1" id="fars">FARS KID
-</div>
-   <div class="col-md-1" id="nik">KOLODZIEJ NIKOLAI</div>
-   </div>
-   </div>
+	  
+      <div class="row para" id="para1">
+      <p> Hey Creative-Tim team. Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed</p>
+      </div>
+      <div class="row para" id="para2">
+      <p> Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you. I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)</p>
+      </div>
+      <div class="row para" id="para3">
+      <p> Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. hope to meet u guys one day.</p>
+      </div>
+      <div class="row para" id="para4">
+      <p> Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!</p>
+      </div>
+      <div class="row">
+      <div class="col-md-offset-4 col-md-1 col-xs-1 col-xs-offset-4" id="edwin">EDWIN REDE</div>
+      <div class="col-md-1 col-xs-1" id="abhi">ABHI KHATRI
+      </div>
+      <div class="col-md-1 col-xs-1" id="fars">FARS KID
+      </div>
+      <div class="col-md-1 col-xs-1" id="nik">KOLODZIEJ NIKOLAI</div>
+      </div>
+      </div>
 
    <!--what people think section ends-->
-   <div class="row">
-   <div class="col-md-2 col-md-offset-3"></div>
-   <div class="col-md-1 "></div>
-   <div class="col-md-2 "></div>
    
-   <h3>MEET OUR TEAM</h3>
    
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
-	  </div>
-    
-	<!--<div class="team">
+   <!--meet our team starts-->
       <div class="row">
-	  <div class="col-md-3">
-	  <div class="image"><img src="images/21.jpg" width="50" height="50"/><br/></div>
-      <div class=" name">ELENA CONACEL<br/></div>
-	  <div class="description">Elena is one of the co-founders <br/>and takes care of growth, product <br/>development and partnerships.<br/> She is analytical, driven and <br/>adapts easily to new conditions, <br/>while trying to keep everyone on <br/>track.</div><br/></div></div>
+      <div class="col-md-2 col-md-offset-3 col-xs-2 col-xs-offset-3"></div>
+      <div class="col-md-1  col-xs-1"></div>
+      <div class="col-md-2 col-xs-2"></div>
+      <div class="pad">
+	  <h3>MEET OUR TEAM</h3>
+	  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
+	  </div></div>
+	  <div class="team">
+	  <div class="row first">
+	  <div class="our">
+      <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><img src="images/21.jpg" style="height:100px; width:100; border:2px solid brown; border-radius:70px;"/></div> 
+      <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><img src="images/22.png" style="height:100px; width:100; border:2px solid brown; border-radius:70px;"/></div> 
+      <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><img src="images/23.png" style="height:100px; width:100; border:2px solid brown; border-radius:70px;"/></div>
+	  <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><img src="images/24.jpg" style="height:100px; width:100; border:2px solid brown; border-radius:70px;"/></div> </div></div></div>
 	  
-	  <div class="col-md-3 ">
-	   <div class="col-md-3 image"><img src="images/22.jpg" width="50" height="50"/><br/>
-	  <div class=" name">DIANA CALIMAN<br/>
-	  <div class="description">Diana is the person behind our <br/>social media channels, she takes <br/>care of our users' community<br/> and communication. She is<br/> ambitious, hard-working,<br/> instantly likeable and fun to be <br/>around.</div><br/></div></div>
+      <br/><div class="f1"><div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">ELENA CONACEL</div>
+	  <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">DIANA CALIMAN</div>
+	  <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">ALEX PADURARU</div>
+      <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">BENIAMIN MARCU</div></div></div></div>
 	  
-	  <div class="col-md-3 ">
-	   <div class="col-md-3 image"><img src="images/23.jpg" width="50" height="50"/><br/>
-	  <div class="col-md-2 name">ALEX PADURARU<br/>
-	  <div class="description">Alex is one of the co-founders<br/>and drives the technical strategy<br/> of the platform, customer <br/>support and brand. He is level-<br/>headed, smart and with a taste<br/> for simple, aesthetic design.</div><br/></div></div>
+	
+	    
+      <br/><div class="f3"><div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">Elena is one of the co-founders and takes care of growth, product development and partnerships. She is analytical, driven and adapts easily to new conditions, while trying to keep everyone on track.</div>
+      <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1">Diana is the person behind our social media channels, she takes care of our users' community and communication. She is ambitious, hard-working, instantly likeable and fun to be around.</div>
+	  <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"> Alex is one of the co-founders and drives the technical strategy of the platform, customer support and brand. He is level-headed, smart and with a taste for simple, aesthetic design.</div>
+	  <div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"> Beni is the guy responsible for keeping the platform in check, improving its functionality and adding new features. He is driven, always open for learning more, friendly and a fan of Ruby on Rails.</div></div></div></div>
 	  
-	  <div class="col-md-3 ">
-	   <div class="col-md-3 image"><img src="images/24.jpg" width="50" height="50"/><br/>
-	  <div class="col-md-2 name">BENIAMIN MARCU<br/>
-	  <div class="description">Beni is the guy responsible for <br/>keeping the platform in check,<br/> improving its functionality and <br/>adding new features. He is<br/> driven, always open for learning <br/>more, friendly and a fan of Ruby <br/>on Rails.</div><br/></div></div>
-	</div>-->
-   <div class="row">
-   <h3>NUMBERS DON'T LIE</h3>
+	  
+	  
+	  <br/><div class="f4"><div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
+		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div>
+		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
+		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div>
+		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
+		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div>
+		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
+		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div></div></div></div>
+		<!--meet our team ends-->
+	  
+        <!--numbers section start-->
+        <div class="row">
+        <h3>NUMBERS DON'T LIE</h3>
+		<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
+	    </div>
+       <p>"Started from the bottom now we're here" - Drake</p>
+       <div class="lie">
+	   <div class="row first">
+	   <div class="user">
+	   <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Users</div>
+	   <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Downloads </div>
+	   <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Countries</div></div></div></div>
    
-		 <div class="col-md-4 col-md-offset-4 line"> </div>
-	  </div>
-   <p>"Started from the bottom now we're here" - Drake</p>
-   
-   <div class="grid">
-      <div class="row">
-      <div class="col-md-3 col-md-offset-2 hed">Users<br/>
-	  <div class="des">Businesses and Professionals</div><br/>
-	  <div class="number">116.000+</div>
-	  </div>
+       <div class="des">
+       <br/><div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Businesses and Professionals</div>
+	   <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Freebies, Templates & UI Kits</div>
+	   <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Where we made sponsorships</div></div></div></div>
 	  
-       <div class="col-md-3 hed ">Downloads<br/>
-	   <div class="des">Freebies, Templates & UI Kits</div><br/>
-	  <div class="number">186.000+</div>
-	   
-	   </div>
-	   
-      <div class="col-md-3 hed ">Countries</div><br/>
-    <div class=" col-md-2 des">Where we made sponsorships</div><br/>
-	  <div class="col-md-3 number">14</div>
-   </div>	  
-
+	  <div class="number">
+	  <br/><div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">116.000+</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">186.000+</div>
+	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">14</div></div></div></div>
+	  <!-- numbers section ends-->
 	  
-  
-	<div class="meet">
-	   <h2> Where to meet ?</h2>
-	    <h4>N-81, Barakhamba Road,  Block N, Connaught Place, New Delhi</h4>
-	    <h2>Want to say hello?</h2>
-	   <button name="subject" type="submit" value="CONTACT US">CONTACT US</button><br/>
-	   <h2>Thank you for 948 shares!</h2>
-	   <button name="subject" type="submit" value="FACEBOOK">FACEBOOK</button>
-	   <button name="subject" type="submit" value="TWITTER">TWITTER</button></div>
-    
-    <div id="map"></div>
-	
-	   
-	
-	
-	
+	  <!--whare to meet section stars-->
+      <div class="where">
+	  <div class="row first">
+	  <div class="meet">
+	  <div class="col-md-4">
+	  <h4> Where to meet ?</h4>
+	  <h6>N-81, Barakhamba Road,  Block N, Connaught Place, New Delhi</h6>
+	  <h4>Want to say hello?</h4>
+	  <button name="subject" type="submit" value="CONTACT US">CONTACT US</button><br/>
+	  <h6>Thank you for 948 shares!</h6>
+	  <button name="subject" type="submit" value="FACEBOOK">FACEBOOK</button>
+	  <button name="subject" type="submit" value="TWITTER">TWITTER</button></div>
+	  
+	  <div class="col-md-8"><div id="map"></div></div>
+	  </div></div></div>
+	  
 		
-			<div class="footer">
-			<ol>
-			  <div class="left-content"> 
-			  <li><a href="#https://www.creative-tim.com/?ref=presentation-page">Home</a></li>
-		      <li><a href="#http://www.creative-tim.com/contact-us">Contact</a></li>
-		       <li><a href="#http://blog.creative-tim.com/">Blog</a></li>
-              <li><a href="#http://www.creative-tim.com/sponsorships">Sponsorships</a></li>
-			  </div>
-			  <div class="rubik">
-			  <li><a href="#http://demos.creative-tim.com/rubik">© 2016 <b>Creative Tim</b>, page made with <b>Rubik</b></a></li></div>
-			  <div class="social">
-			   <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="22" height="12"/></a></li>
-			   <li><a href="#https://plus.google.com/"><img src="images/google+.png" width="22" height="12"/></a></li>
-			   <li><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="22" height="12"/></a></li>
-			   <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="24" height="14"/></a></li>   
-			   </div>
-       </ol></div>			   
+	  <div class="footer">
+	  <ol>
+	  <div class="left-content"> 
+	  <li><a href="#https://www.creative-tim.com/?ref=presentation-page">Home</a></li>
+	  <li><a href="#http://www.creative-tim.com/contact-us">Contact</a></li>
+	  <li><a href="#http://blog.creative-tim.com/">Blog</a></li>
+      <li><a href="#http://www.creative-tim.com/sponsorships">Sponsorships</a></li>
+	  </div>
+	  <div class="rubik">
+	  <li><a href="#http://demos.creative-tim.com/rubik">© 2016 <b>Creative Tim</b>, page made with <b>Rubik</b></a></li></div>
+	  <div class="social">
+	 <div class="im"> <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="22" height="12"/></a></li>
+	  <li><a href="#https://plus.google.com/"><img src="images/google+.png" width="22" height="12"/></a></li>
+	  <li><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="22" height="12"/></a></li>
+	  <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="24" height="14"/></a></li>   
+	  </div></div>
+      </ol></div>			   
    </body>
  
-<script>
-   $("#edwin").click(function(){
-   $("#para1").show();
-   $(".para").hide();
-   });
+  <script>
+      $("#edwin").click(function(){
+      $("#para1").show();
+      $(".para").hide();
+      });
    
-   $("#abhi").click(function(){
-   $("#para2").show();
-   $(".para").hide();
+      $("#abhi").click(function(){
+      $("#para2").show();
+      $(".para").hide();
+      });
    
-   });
+      $("#fars").click(function(){
+      $("#para3").show();
+      $(".para").hide();
+      });
    
-   $("#fars").click(function(){
-   $("#para3").show();
-   $(".para").hide();
-   
-   });
-   
-   $("#nik").click(function(){
-   $("#para4").show();
-   $(".para").hide();
-   
-   });
+      $("#nik").click(function(){
+      $("#para4").show();
+      $(".para").hide();
+      })
+  </script>
 
-</script>
-<script>
+  <script>
       function initMap() {
-        var uluru = {lat: 28.63278, lng: 77.21972};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: uluru
+       var uluru = {lat: 28.63278, lng: 77.21972};
+       var map = new google.maps.Map(document.getElementById('map'), {
+       zoom: 12,
+       center: uluru
         });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+		
+       var marker = new google.maps.Marker({
+       position: uluru,
+       map: map
         });
       }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFiCirt-utiEMWkamnzkfOXhu1jtJvTY&callback=initMap">
-    </script>
+  </script>
+	
+  <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFiCirt-utiEMWkamnzkfOXhu1jtJvTY&callback=initMap">
+      </script>
+<script>alert("javascript works!")
+$('div').on('click',function() {$(this).toggleClass('show description');}); </script>  
 </html>
