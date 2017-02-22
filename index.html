@@ -9,21 +9,30 @@
    <!-- Optional theme -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+   <!--jquery included-->
+   <script src="js/jquery-3.1.1.min.js"></script>
+   
+    <!--bootstrap javascript included-->
+   <script src="js/bootstrap.min.js"></script>
+   
    <!-- Latest compiled and minified JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-   <!--jquery included-->
-   <script src="js/jquery-3.1.1.min.js"></script>
+  
 	  
    <title>CREATIVE TIM</title>
 	
 	
    <style>
-      img:hover{
-	  border:2px solid black;
+      .social:hover {
+	  background-color:blue;
+	  
 	  }
-     
-   
+	  
+	  img:hover {
+	  border:1px solid black;
+	  }
+	  
       ul{
 	     list-style-type:none;
 		 margin:0px;
@@ -71,6 +80,7 @@
 		 width:100vw;
 		 margin-right:0px;
 		 margin-top:0px;
+		 postion:relative;
 		       }
 			   
 		
@@ -181,7 +191,7 @@
 		 }
 	
 	  #para2, #para3, #para4{
-	     display:none;
+	     display: none;
 		 }
 		 
 	  .hed{
@@ -398,6 +408,7 @@
 		 width:100vw;
 		 margin-right:0px;
 		 margin-top:0px;
+		 postion:relative;
 		       }
 	   
 	  .TIM{
@@ -495,7 +506,7 @@
 		 }
 		 
 	  #map {
-         width: 36.5vw;
+         width: 96.5vw;
          height: 218.8px;
          background-color: grey;
 		 margin-bottom:0;
@@ -685,13 +696,11 @@
 		       <li><a href="#Numbers">Numbers</a></li>
                <li><a href="#Contact">Contact</a>
 			   <li><input type="serach" placeholder="search "><input type="submit" value="search"></li>
-			  <div class="social"> <li><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></li>
-			   <li><a href="#https://plus.google.com/"><img src="images/google+.png" width="20" height="10"/></a></li>
-			   <li><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
-			   <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a></li> </div>  
-			   </div>	</div></div>
+			   <li><div class="social"><img src="images/fb.png" width="20" height="10"/></div></li>
+			   <li><div class="social"><img src="images/twitter.png" width="20" height="10"/></div></li></div></div>
+			   </div>	</div>
              </ul>			   
-            </div></div>			   
+            </div>			   
 	  
       <div class="row parallax">
 	     <div class="row website-name">CREATIVE TIM</div>
@@ -702,7 +711,7 @@
 	  </div>
 	  
 	  <!--about creative tim-->
-	  <div class="row about ">ABOUT CREATIVE TIM</div>
+	  <div class="row about "><a name="About">ABOUT CREATIVE TIM</a></div>
 	  <div class="row">
 		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
@@ -730,7 +739,7 @@
 	  
 	  
 	  <!--what we do section  starts-->
-	  <div class="row about ">WHAT WE DO</div>
+	  <div class="row about "><a name="What we do">WHAT WE DO</a></div>
 	 <div class="row">
 		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
@@ -757,7 +766,7 @@
      
    <!-- our famous freebies start-->
    <div class="row">
-   <h3>OUR FAMOUS FREEBIES</h3>
+   <h3><a name="Famous Freebies">OUR FAMOUS FREEBIES</a></h3>
 	  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
       <p>Check out the most popular freebies from our platform. We would love to hear <br/>your feedback.</p>
@@ -766,6 +775,7 @@
    <table class="table">
 	<thead>
 	<tr>
+	
 	<th><img src="images/9.jpg" width="365" height="273"/></th>
 	<th><img src="images/10.jpg" width="365" height="273"/></th>
 	<th><img src="images/11.jpg" width="365" height="273"/></th></tr>
@@ -791,48 +801,18 @@
 	
 	</tbody></table></div>
 	
-	  
-	 <!--
-	  
-	  <div class="row second">
-	  
-      <div class="col-md-3 col-xs-3 "><img src="images/9.jpg" width="365" height="273"/></div>
-       <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/10.jpg" width="365" height="273"/></div>
-      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><img src="images/11.jpg" width="365" height="273"/></div></div></div>
-	  
-      <br/><div class="f2"> <div class="col-md-3 col-xs-3  ">Just Launched</div>
-	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Just Launched</div>  
-      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">19.200+ Downloads</div></div></div>	</div>
-	  
-	  <br/><div class="f1"><div class="col-md-3 col-xs-3 "> Material Dashboard</div>
-	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Material Dashboard</div>
-      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Get Shit Done Kit</div></div></div>	</div>
-	  
-	  
-	  <br/><div class="f3"><div class="col-md-3 col-xs-3 "> Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design </div>
-	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design </div>
-      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1">Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements.</div></div>	</div>
-   
-      <br/><div class="f4"><div class="col-md-3 col-xs-3 "><button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button>
-	  </div>
-      <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"><button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button>
-	  </div>
-	  <div class="col-md-3 col-md-offset-1 col-xs-3 col-xs-offset-1"> <button type="submit" value="Live View">Live View</button><button type="submit" value="Free Download">Free Download</button></div></div></div></div>
-	  -->
-   <!-- our famous freebies ends-->
-   
-   <!--premium ui tools-->
   <div class="row">
-      <h3>OUR PREMIUM UI TOOLS</h3>
+     <h3> OUR PREMIUM UI TOOLS</h3>
 	  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
       <p>Check out these UI Tools, they will speed up your development process for sure!</p>
    <table class="table">
 	<thead>
 	<tr>
+	<div class="our products"> 
 	<th><img src="images/18.jpg" width="365" height="273"/></th>
 	<th><img src="images/19.jpg" width="365" height="273"/></th>
-	<th><img src="images/20.jpg" width="365" height="273"/></th></tr>
+	<th><img src="images/20.jpg" width="365" height="273"/></th></div></tr>
 	<tbody>
 	<tr>
 	<td><div class="f2">Template from $19</td>
@@ -886,26 +866,26 @@
 	<td><button type="submit" value="Know More">Know More</button></td>
 	<td><button type="submit" value="Know More">Know More</button></td>
 	</tr>
-	</tbody></table></div></div>
+	</tbody></table></div></div></div>
 	  
 	  
    <!--what people think section starts-->
-      <div class="row">
-      <h3>WHAT PEOPLE THINK...</h3>
-		 <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
+      <div class="row what-people-think-container section-container">
+      <div class="row section-heading"><h3><a name="Testimonials">WHAT PEOPLE THINK...</a></h3></div>
+	  <div class="row"> <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div>
 	  
       <div class="row para" id="para1">
-      <p> Hey Creative-Tim team. Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed</p>
+      <p>" Hey Creative-Tim team. Absolutely love your work! It's a God-send for a developer like me who doesn't know his ass from great design! Keep up the awesome work! Ed"</p>
       </div>
       <div class="row para" id="para2">
-      <p> Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you. I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)</p>
+      <p>"Hello there, My Name is Abhi Khatri. You're simply awesome. I would love to contact you. I'm a new front-end developer but everytime I checkout your stuff it gives me idea to make my own stuff. Keep it up :)"</p>
       </div>
       <div class="row para" id="para3">
-      <p> Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. hope to meet u guys one day.</p>
+      <p> "Finding a website with a vast purpose is always inspiring to continue front web development. But you did Magic my friends. Keep going and be sure if there is a donation, I'm in. Thanks for your daily hardworking. hope to meet u guys one day."</p>
       </div>
       <div class="row para" id="para4">
-      <p> Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!</p>
+      <p>" Hi, your site and all the stuff on it looks simply awesome, thank's for sharing. Love this. Greetings from Germany!"</p>
       </div>
       <div class="row">
       <div class="col-md-offset-4 col-md-1 col-xs-1 col-xs-offset-4" id="edwin">EDWIN REDE</div>
@@ -926,7 +906,7 @@
       <div class="col-md-1  col-xs-1"></div>
       <div class="col-md-2 col-xs-2"></div>
       <div class="pad">
-	  <h3>MEET OUR TEAM</h3>
+	  <h3><a name="Team">MEET OUR TEAM</a></h3>
 	  <div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	  </div></div>
 	  <div class="team">
@@ -951,19 +931,20 @@
 	  
 	  
 	  
-	  <br/><div class="f4"><div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
-		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div>
-		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
-		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div>
-		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
-		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div>
-		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></li>
-		<a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="22" height="12"/></a> </div></div></div></div>
+	  <br/><div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><div class="social"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></div><div class="social"><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></div>
+		</li> </div></div>
+		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><div class="social"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></div><div class="social"><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></div>
+		</li> </div></div>
+		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><div class="social"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></div><div class="social"><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></div>
+		</li> </div></div>
+		<div class="col-md-2 col-md-offset-1 col-xs-2 col-xs-offset-1"><div class="social"><a href="#https://www.facebook.com/"><img src="images/fb.png" width="20" height="10"/></a></div><div class="social"><a href="#https://www.twitter.com/"><img src="images/twitter.png" width="20" height="10"/></a></div>
+		</li> </div></div>
+		
 		<!--meet our team ends-->
 	  
         <!--numbers section start-->
         <div class="row">
-        <h3>NUMBERS DON'T LIE</h3>
+        <h3><a name="Numbers">NUMBERS DON'T LIE</a></h3>
 		<div class="col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4 line"> </div>
 	    </div>
        <p>"Started from the bottom now we're here" - Drake</p>
@@ -990,7 +971,7 @@
 	  <div class="row first">
 	  <div class="meet">
 	  <div class="col-md-4 col-xs-5">
-	  <h4> Where to meet ?</h4>
+	  <h4><a name="Contact"> Where to meet ?</a></h4>
 	  <h6>N-81, Barakhamba Road,  Block N, Connaught Place, New Delhi</h6>
 	  <h4>Want to say hello?</h4>
 	  <button name="subject" type="submit" value="CONTACT US">CONTACT US</button><br/>
@@ -1019,28 +1000,25 @@
 	  <li><a href="#https://www.linkedin.com/"><img src="images/linkedin.png" width="24" height="14"/></a></li>   
 	  </div></div>
       </ol></div>			   
-   </body>
+   
  
   <script>
-      $("#edwin").click(function(){
-      $("#para1").show();
-      $(".para").hide();
+      $('#abhi').click(function(){
+      $('#para2').show();
+	  $('.para').hide();
       });
-   
-      $("#abhi").click(function(){
-      $("#para2").show();
-      $(".para").hide();
+	  $('#edwin').click(function(){
+      $('#para1').show();
+	  $('.para').hide();
       });
-   
-      $("#fars").click(function(){
-      $("#para3").show();
-      $(".para").hide();
+	  $('#fars').click(function(){
+      $('#para3').show();
+	  $('.para').hide();
       });
-   
-      $("#nik").click(function(){
-      $("#para4").show();
-      $(".para").hide();
-      })
+	  $('#nik').click(function(){
+      $('#para4').show();
+	  $('.para').hide();
+      });
   </script>
 
   <script>
@@ -1062,5 +1040,6 @@
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFiCirt-utiEMWkamnzkfOXhu1jtJvTY&callback=initMap">
       </script>
 <script>alert("javascript works!")
-$('div').on('click',function() {$(this).toggleClass('show description');}); </script>  
+$('div').on('click',function() {$(this).toggleClass('show description');}); </script>
+</body>  
 </html>
