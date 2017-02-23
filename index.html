@@ -15,6 +15,10 @@
     <!--bootstrap javascript included-->
    <script src="js/bootstrap.min.js"></script>
    
+   <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFiCirt-utiEMWkamnzkfOXhu1jtJvTY&callback=initMap">
+   </script>
+   
    <!-- Latest compiled and minified JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -191,7 +195,7 @@
 		 }
 	
 	  #para2, #para3, #para4{
-	     display: none;
+	     display:none;
 		 }
 		 
 	  .hed{
@@ -889,10 +893,8 @@
       </div>
       <div class="row">
       <div class="col-md-offset-4 col-md-1 col-xs-1 col-xs-offset-4" id="edwin">EDWIN REDE</div>
-      <div class="col-md-1 col-xs-1" id="abhi">ABHI KHATRI
-      </div>
-      <div class="col-md-1 col-xs-1" id="fars">FARS KID
-      </div>
+      <div class="col-md-1 col-xs-1" id="abhi">ABHI KHATRI</div>
+      <div class="col-md-1 col-xs-1" id="fars">FARS KID</div>
       <div class="col-md-1 col-xs-1" id="nik">KOLODZIEJ NIKOLAI</div>
       </div>
       </div>
@@ -1003,21 +1005,27 @@
    
  
   <script>
-      $('#abhi').click(function(){
-      $('#para2').show();
-	  $('.para').hide();
+      $("#edwin").click(function(){
+	  $(".para").hide();
+      $("#para1").show();
+	  
       });
-	  $('#edwin').click(function(){
-      $('#para1').show();
-	  $('.para').hide();
+	  
+	  $("#abhi").click(function(){
+	  $(".para").hide();
+      $("#para2").show();
+	  
       });
-	  $('#fars').click(function(){
-      $('#para3').show();
-	  $('.para').hide();
+	  
+	  $("#fars").click(function(){
+	  $(".para").hide();
+	  $("#para3").show();
       });
-	  $('#nik').click(function(){
-      $('#para4').show();
-	  $('.para').hide();
+	  
+	  $("#nik").click(function(){
+	  $(".para").hide();
+      $("#para4").show();
+	  
       });
   </script>
 
@@ -1035,11 +1043,5 @@
         });
       }
   </script>
-	
-  <script async defer
-       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvFiCirt-utiEMWkamnzkfOXhu1jtJvTY&callback=initMap">
-      </script>
-<script>alert("javascript works!")
-$('div').on('click',function() {$(this).toggleClass('show description');}); </script>
-</body>  
+  </body>
 </html>
